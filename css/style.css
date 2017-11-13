@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 30px;
-  color: black; /* button 1 text no hover */
+  color: white; /* button 1 text no hover */
   border: none !important;
   font-size: 24px;
         margin-top: 25px;
@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc .btn.btn-learn,
 .fh5co-cover .display-tc .btn.btn-learn {
-  background: #52c8e4; /* button 2 background no hover */
+  background: #52c8e4; /* button 1 background no hover */
   border: none;
   color: black!important; /* button 1 text*/
     margin-top: 25px;
@@ -363,8 +363,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc .btn.btn-demo,
 .fh5co-cover .display-tc .btn.btn-demo {
-  background: #e4b92c; /* button 1 background no hover */
+  background: #DD356E; /* buy button 1 background no hover */
   border: none;
+    width: 300px;
 }
 #fh5co-header .display-tc .btn.btn-demo:hover, #fh5co-header .display-tc .btn.btn-demo:focus,
 .fh5co-cover .display-tc .btn.btn-demo:hover,
@@ -996,16 +997,12 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-.btn {
+.btn { /* master button */
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Inconsolata", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
