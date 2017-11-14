@@ -11,6 +11,21 @@
   gtag('config', 'UA-91361254-2');
 </script>
 
+<script>
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+
 
 
 <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
@@ -78,7 +93,7 @@
 							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 								<h1>Squirrels Without Morality</h1>
 								<h2>A mock interview game for pre-professional teens. </h2>
-								<p><a class="btn btn-primary btn-lg btn-demo" href="https://docs.google.com/forms/d/e/1FAIpQLSekcUnIAJAfDVg1IUuuiZimOG6ps6eZO0gXaLa2p2ToerrsCQ/viewform"></i> Buy Now</a>
+								<p><a class="btn btn-primary btn-lg btn-demo" href="https://docs.google.com/forms/d/e/1FAIpQLSekcUnIAJAfDVg1IUuuiZimOG6ps6eZO0gXaLa2p2ToerrsCQ/viewform" onclick="trackOutboundLink('https://docs.google.com/forms/d/e/1FAIpQLSekcUnIAJAfDVg1IUuuiZimOG6ps6eZO0gXaLa2p2ToerrsCQ/viewform'); return true;"></i> Buy Now</a>
 								</div>
 							</div>
 						</div>
