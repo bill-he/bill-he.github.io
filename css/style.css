@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Inconsolata", Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
@@ -62,7 +62,7 @@ b {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #082a60;
-  font-family: "Inconsolata", Arial, sans-serif;
+font-family: 'Barlow', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Inconsolata", Arial, sans-serif;
+font-family: 'Barlow', sans-serif;
 }
 .fh5co-nav #fh5co-logo a span {
   color: #DD356E;
@@ -1194,4 +1194,3 @@ h1, h2, h3, h4, h5, h6, figure {
 .js .animate-box {
   opacity: 0;
 }
-
