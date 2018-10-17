@@ -71,7 +71,9 @@
     <![endif]-->
 
     <style>
-
+        .container, .row, .js-fullheight {
+            height: 100vh !important;
+        }
 
         .float {
             -webkit-animation-name: Floating;
@@ -92,11 +94,11 @@
             }
         }
 
-        #promo1, #promo1 {
+        #promo1, #promo2 {
             display: none;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 500px) {
             #promo0 {
                 display: none;
             }
@@ -109,11 +111,12 @@
             }
 
             #heading {
-                background: rgba(0, 0, 0, 0.5);
+                text-shadow: 0 0 3px black;;
             }
 
             #fh5co-header {
                 height: 100vh;
+                position: relative;
             }
         }
 
@@ -128,7 +131,7 @@
     <meta property="og:image"
           content="/sam_poster_1.jpg"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
 
 
 </head>
@@ -162,7 +165,7 @@
         </div>
     </header>
 
-    <img id="promo2" src="CAHPromo_right.png" style="position: absolute; z-index: -10; top: 60vh; right: 0;"/>
+    <img id="promo2" src="CAHPromo_right.png" style="position: absolute; z-index: -10; top: 65vh; right: 0;"/>
 
 </div>
 
