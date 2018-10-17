@@ -92,6 +92,31 @@
             }
         }
 
+        #promo1, #promo1 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #promo0 {
+                display: none;
+            }
+
+            #promo1, #promo2 {
+                display: inherit;
+                width: 60% !important;
+
+                position: absolute;
+            }
+
+            #heading {
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            #fh5co-header {
+                height: 100vh;
+            }
+        }
+
     </style>
 
     <title>Squirrels Without Morality</title>
@@ -103,11 +128,15 @@
     <meta property="og:image"
           content="/sam_poster_1.jpg"/>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 <body>
 
 <div style="position: relative; z-index: 1;">
-    <img src="CAHPromo.jpg" style="width:100%; position: absolute; z-index: 2;"/>
+    <img id="promo0" src="CAHPromo.jpg" style="width:100%; position: absolute; z-index: 2;"/>
+    <img id="promo1" src="CAHPromo_left.png" style="z-index: -10;"/>
 
     <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
             style="position: relative; top: -10px; z-index: 3;">
@@ -117,7 +146,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                            <h1>Squirrels Without Morality</h1>
+                            <h1 id="heading">Squirrels Without Morality</h1>
                             <h2>A mock interview game for pre-professional teens.
                                 <br>
                                 Created by <a href="http://www.thesign.al/">The Signal</a> Team
@@ -132,6 +161,8 @@
             </div>
         </div>
     </header>
+
+    <img id="promo2" src="CAHPromo_right.png" style="position: absolute; z-index: -10; top: 60vh; right: 0;"/>
 
 </div>
 
